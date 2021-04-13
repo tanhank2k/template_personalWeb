@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none; /*-Trang tri them cho text, */
+    font-family: 'Noticia', serif;
+    box-sizing: border-box;
+}
+
+/*Navbar*/
+
+.navbar{
+    position: fixed;
+    background-color: red;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;    
+    transition: .2s linear;
+}
+
+.inner-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.navbar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo{
+    width: 44px;
+    height: 44px;
+    background-image: url("../image/logo.png");
+    background-size:cover;
+}
+
+.menu-toggler{
+    background: none;
+    width: 33px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span{
+    display: block;
+    height: 1.5px;
+    background: white;
+    margin:6px 0;
+}
+
+.navbar-menu a{
+    color:white;
+    font-size: 15px;
+    font-weight:500;
+    margin-left: 30px;
+    transition: .2s linner;
+}
+
+.navbar-menu a:hover{
+    color: #48dbfb;
+}
